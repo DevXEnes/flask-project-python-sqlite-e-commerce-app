@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="home page">
+    <meta name="keywords" content="ender">
+    <meta name="author" content="Enes">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:5000/">
+    <link rel="stylesheet" href="{{ url_for('static', filename='sign.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <form action="/" method="post" class="login">
+        <h1 class="title-row">Login <i class="bi bi-box-arrow-in-right"></i></h1>
+        <span class="incorrect-message">{{error_mes}}</span>
+        <input type="text" placeholder="username" class="inp-log" name="username" required minlength="8">
+        <input type="password" placeholder="password" class="inp-log" name="password" required minlength="8">
+        <button type="submit" class="btn-log">Login</button>
+        <p class="login-links">
+            <span class="info">I not have account</span>
+            <span class="register"><a href="/register" class="link"> register</a></span>
+        </p>
+    </form>
+
+</body>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</html>

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+.title-row {
+    color: #000000;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #252525;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    background: #c7c7c756;
+    padding: 30px 40px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.login .inp-log {
+    background: #9c9c9c;
+    padding: 9.2px 20px;
+    max-width: 250px;
+    width: 250px;
+    color: #000000;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.login .inp-log:focus {
+    border-color: #1d1d1d;
+}
+
+.login .inp-log::placeholder {
+    color: #1d1d1d;
+}
+
+.login .btn-log {
+    background: #1d1d1d;
+    color: #d4d4d4;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+    border-radius: 5px;
+}
+
+.login .btn-log:hover {
+    background: #d4d4d4;
+    color: #1d1d1d;
+}
+
+.login-links {
+    font-size: 13px;
+}
+
+.login-links .link {
+    color: #000000;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 1px;
+    transition: 0.4s ease-in-out;
+}
+
+.login-links .link:hover {
+    color: #d4d4d4;
+}
+
+.incorrect-message {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0;
+    user-select: none;
+}
